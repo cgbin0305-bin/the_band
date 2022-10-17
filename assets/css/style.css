@@ -146,11 +146,8 @@ html {
 #slider {
   position: relative;
   padding-top: 50%;
-  background: url(/assets/image/slider/slider1.jpg);
-  background-position: top center;
-  background-repeat: no-repeat;
+  background: url(../image/content/slider1.jpg) no-repeat top center;
   background-size: cover;
-  /* top center / cover no-repeat; */
   margin: 46.5px 0;
 }
 .text-content {
