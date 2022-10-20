@@ -5,12 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link
-      rel="stylesheet"
-      href="./assets/font/themify-icons/themify-icons.css"
-    />
-    <title>The Band</title>
+    <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css"/>
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="icon" type="image/x-icon" href="https://fullstack.edu.vn/static/media/f8-icon.18cd71cfcfa33566a22b.png">  
+    <title>The Band</title>
   </head>
   <body>
     <!-- Begin: nav -->
@@ -34,12 +32,15 @@
           </li>
         </ul>
         <!-- End: nav -->
-
-        <!-- Begin: Search button-->
+        <!-- Menu Button -->
+        <div id="mobile-menu" class="mobile-menu-btn">
+          <i class="menu-icon ti-menu"></i>
+        </div>
+        <!-- Search Button -->
         <div class="search-btn">
           <i class="search-icon ti-search"></i>
         </div>
-        <!-- End: Search button-->
+
       </div>
 
       <div id="slider">
@@ -70,7 +71,7 @@
             ea commodo consequat.
           </p>
           <div class="row about-member">
-            <div class="col col-third text-center">
+            <div class="col col-third s-col-full text-center mt-32">
               <p class="member-name">Name</p>
               <img
                 src="./assets/image/content/bandmember.jpg"
@@ -78,7 +79,7 @@
                 class="member-img"
               />
             </div>
-            <div class="col col-third text-center">
+            <div class="col col-third s-col-full text-center mt-32">
               <p class="member-name">Name</p>
               <img
                 src="./assets/image/content/bandmember.jpg"
@@ -86,7 +87,7 @@
                 class="member-img"
               />
             </div>
-            <div class="col col-third text-center">
+            <div class="col col-third s-col-full text-center mt-32">
               <p class="member-name">Name</p>
               <img
                 src="./assets/image/content/bandmember.jpg"
@@ -110,31 +111,31 @@
 
               <!-- Places -->
               <div class="row places-list">
-                <div class="col col-third">
+                <div class="col col-third s-col-full mt-16">
                   <img src="./assets/image/place/newyork.jpg" alt="New York" class="place-img">
                   <div class="place-content">
                     <h2 class="place-heading">New York</h2>
                     <span class="place-time">Fri 27 Nov 2016</span>
                     <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p> 
-                    <button class="btn js-buy-ticket">Buy Tickets</button>
+                    <button class="btn js-buy-ticket s-full-width">Buy Tickets</button>
                   </div>
                 </div>
-                <div class="col col-third">
+                <div class="col col-third s-col-full mt-16 ">
                   <img src="./assets/image/place/paris.jpg" alt="New York" class="place-img">
                   <div class="place-content">
                     <h2 class="place-heading">Paris</h2>
                     <span class="place-time">Sat 28 Nov 2016</span>
                     <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p> 
-                    <button class="btn js-buy-ticket">Buy Tickets</button>
+                    <button class="btn js-buy-ticket s-full-width">Buy Tickets</button>
                   </div>
                 </div>
-                <div class="col col-third">
+                <div class="col col-third s-col-full mt-16 ">
                   <img src="./assets/image/place/sanfran.jpg" alt="New York" class="place-img">
                   <div class="place-content">
                     <h2 class="place-heading">San Francisco</h2>
                     <span class="place-time">Sun 29 Nov 2016</span>
                     <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p> 
-                    <button class="btn js-buy-ticket">Buy Tickets</button>
+                    <button class="btn js-buy-ticket s-full-width">Buy Tickets</button>
                   </div>
                 </div>
               </div>
@@ -146,19 +147,19 @@
           <p class="section-sub-heading">Fan? Drop a note!</p>
           <div class="contact-content">
             <div class="row">
-              <div class="col col-half contact-info">
+              <div class="col col-half s-col-full contact-info">
                 <p><i class="ti-location-pin"></i>Chicago,US</p>
-                <p><i class="ti-mobile"></i>Phone: +00 15 15 15</p>
-                <p><i class="ti-email"></i>Email: mail@mail.com</p>
+                <p><i class="ti-mobile"></i>Phone: <a href="tel:+00 15 15 15">+00 15 15 15</a></p>
+                <p><i class="ti-email"></i>Email: <a href="mailto: mail@mail.com"> mail@mail.com</a></p>
               </div>
   
-              <div class="col col-half contact-form">
+              <div class="col col-half s-col-full contact-form">
                 <form action="">
                   <div class="row">
-                   <div class="col col-half">
+                   <div class="col col-half s-col-full">
                     <input type="text" name="" placeholder="Name" required id="" class="form-control">
                    </div>
-                   <div class="col col-half">
+                   <div class="col col-half s-col-full s-mt-8">
                     <input type="email" name="" placeholder="Email" required id="" class="form-control">
                    </div>
                   </div>
@@ -167,7 +168,7 @@
                       <input type="text" name="" placeholder="Message" required id="" class="form-control">
                      </div>
                   </div>
-                  <input type="submit" value="SEND" class="pull-right btn mt-16">
+                  <input type="submit" value="SEND" class="pull-right btn mt-16 s-full-width">
                 </form>
               </div>
             </div>
@@ -251,9 +252,39 @@
       modalClose.addEventListener('click',hideBuyTickets)
       modal.addEventListener('click',hideBuyTickets)
       modalContainer.addEventListener('click', function(event){
-        event.stopPropagation()
+        event.stopPropagation();
       })
     </script>
 
+  <!-- Mobile-JavaScript -->
+    <script>
+      // Close/Open mobile menu
+      var header = document.getElementById('header');
+      var mobileMenu = document.getElementById('mobile-menu');
+      var headerHeight = header.clientHeight;
+      mobileMenu.onclick = function(){
+        var isClosed = header.clientHeight === headerHeight;
+        if (isClosed) {
+          header.style.height ='auto';
+        } else {
+          header.style.height = null;
+        }        
+      }
+      //Auto close menu when choose submenu
+      var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+      console.log(menuItems);
+      for(var i = 0; i < menuItems.length - 1; i++){
+        // var isParent = this.nextElementSibling && this.nextElementSibling.classList.contains('.subnav');
+        var menuItem = menuItems[i];
+        menuItem.onclick = function(e){
+          var isParent = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+          if(isParent){
+            e.preventDefault();
+          }else{
+            header.style.height = null;
+          }
+        }
+      }
+    </script>
   </body>
 </html>
