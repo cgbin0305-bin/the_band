@@ -64,6 +64,7 @@ html {
   display: inline-block;
   margin-top: 15px;
   cursor: pointer;
+  -webkit-appearance: none;
 }
 .btn:hover {
   color: #000;
@@ -173,7 +174,6 @@ html {
   margin-top: 46px;
 }
 .text-content {
-  color: #fff;
 }
 #slider .text-content {
   position: absolute;
@@ -181,6 +181,7 @@ html {
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
+  color: #fff;
 }
 #slider .text-heading {
   margin-bottom: 25px;
@@ -189,6 +190,7 @@ html {
 }
 #slider .text-description {
   font-size: 15px;
+  text-shadow: 0 0 1px #000;
 }
 #content {
   font-family: sans-serif;
